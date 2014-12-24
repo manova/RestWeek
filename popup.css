@@ -1,0 +1,31 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+html{
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+body {
+	background:#ecf0f1;
+	min-width:450px;
+
+	overflow-x:hidden;
+}
+#page_wrapper {
+	margin:4px;
+}
+#title {
+	text-align:center;
+}
+h1{
+	font-size: 30px;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+h2{
+	font-size:20px;
+}
+p{
+	padding-bottom:2px;
+	padding-top:2px;
+}

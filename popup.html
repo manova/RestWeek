@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+
+
+<head>
+	<title>HoverReader</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link href="popup.css" rel="stylesheet" type="text/css">
+	
+	<script src='jquery.min.js'></script>
+	<script src='popup.js'></script>
+
+	<style>
+
+	#header{
+		float:left;
+		width:100%;
+		background:#3498db;
+		color:white;
+		padding:10px;
+		padding-top: 0px;
+		text-align: center;
+	}
+
+	#page_wrapper{
+		float:left;
+		padding:5px;
+	}
+	.remove_domain{
+		color:blue;
+		text-decoration:underline;
+		cursor:pointer;
+	}
+
+	.searchButton {
+		marign-top:5px;
+		-webkit-border-radius: 6;
+		-moz-border-radius: 6;
+		border-radius: 6px;
+		color: #ffffff;
+		font-size: 20px;
+		background: #ea6153;
+		padding: 8px 20px 8px 20px;
+		text-decoration: none;
+		border: none;
+		cursor: pointer;
+		-webkit-appearance: none;
+
+		-webkit-transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+		transition: all 0.5s ease 0s;
+	}
+
+	.searchButton:hover {
+		background: #c0392b;
+		text-decoration: none;
+		-webkit-transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+		transition: all 0.5s ease 0s;
+	}
+
+
+
+
+	</style>
+</head>
+
+
+<body>
+
+
+<div id='header'>
+	<h1>HoverReader</h1>
+	<h2 style='font-weight:400'>Read an article simply by hovering over a link!</h2>
+</div>
+
+<div id='page_wrapper'>
+	
+	<br>
+	<a target='_blank' href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fhoverreader%2Fbgchppjofckmmlfpegeinpegcjmejnlk'><img width='40px' src='http://www.htmlscraper.com/hoverread/facebooklogo.png'></a>
+	<a target='_blank' href='https://twitter.com/intent/tweet?url=https://chrome.google.com/webstore/detail/hoverreader/bgchppjofckmmlfpegeinpegcjmejnlk&text=Read%20an%20article%20simply%20by%20hovering%20over%20a%20link!'><img width='40px' src='http://www.htmlscraper.com/hoverread/twitter_logo.png'></a>
+	<a target='_blank' href='https://plus.google.com/share?url=https://chrome.google.com/webstore/detail/hoverreader/bgchppjofckmmlfpegeinpegcjmejnlk'><img width='40px' src='http://www.htmlscraper.com/hoverread/googlepluslogo.png'></a>
+	<br><br>
+	<!-- Options Table -->
+	<h2>HoverReader Options</h2>
+	<table id='options'>
+	</table>
+	<!-- End Options Table -->
+	(make sure you refresh the page after changing settings)
+	
+	<br>
+	
+	<h2 style='margin-bottom:5px;'>HoverReader Exclusions</h2>
+	<button class='searchButton' id='exclude_button'>Disable on this domain</button>
+	<table id='excludes_table' style='text-align:left;'>
+		<thead>
+			<th>Excluded Domain Names</th>
+		</thead>
+		<tbody></tbody>
+	</table>
+	(make sure you refresh the page disabling a domain)
+
+	<br><br>
+	<div align='center'>
+		<h2 style='text-align:center;'>If you like HoverReader, please donate!</h2>
+		<a style='margin-top:5px;' target='_blank' href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FPXCDTJLVU6EU'>
+			<image src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0">
+		</a>
+		<br>
+
+		<div id='tips'>
+			<h2 style='text-align:center;'>Tips:</h2>
+			<p>Scroll up and down with the arrow keys or your mouse trackpad.</p>
+			<p>If HoverReader isn't going away, just click anywhere on the page.</p>
+		</div>
+
+	</div>
+</div>
+
+
+
+</body>
+</html>
