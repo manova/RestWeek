@@ -1,27 +1,23 @@
 {
-   "background": {
-      "scripts": [ "background.js" ]
-   },
    "browser_action": {
-      "default_icon": "icon128.png",
+      "default_icon": "icon_notext_white.png",
       "default_popup": "popup.html"
    },
    "content_scripts": [ {
       "all_frames": true,
-      "js": [ "jquery.min.js", "hoverreadscript.js" ],
+      "js": [ "jquery.min.js", "restweek.js" ],
       "matches": [ "\u003Call_urls>" ],
       "run_at": "document_end"
    } ],
    "description": "Read an article simply by hovering over a link!",
    "icons": {
-      "128": "icon128.png",
-      "16": "icon16.png",
-      "48": "icon48.png"
+      "128": "icon_notext_white.png",
+      "16": "icon_notext_white.png",
+      "48": "icon_notext_white.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlTEPKzgb+kUPFHlYorZKWE9xF1TY93392LpUZBaxd5qkRwjK8S4apw+Kuac75Axo72z8ZuY2qu4quOxsQln9GCB7xhd68R6ECvjeExCKWxvxoz1FWAaXHgv37ytlDF84h0f9DmL9xh1EJS15CG+8JCdDytJI7pRRtp3O95M5Ax26xkfiMpkYHUdDsWJn4YIwNBvf3sI3dDpHm7o7q87E/M06nBWzaJcVsMVQGM4iQ2JoXmLPjivAQw/E0aRPSqdnh8GCebjIRsibdSvZoAonAH4+fFg+sAFVr3x57X9Gk5lzFcurK5YKDIXVBEVEO1VRhEhmVpNsjhHILD3aiX7rvQIDAQAB",
    "manifest_version": 2,
-   "name": "HoverReader",
+   "name": "RestWeek",
    "permissions": [ "tabs", "\u003Call_urls>" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "4"
+   "version": "1"
 }

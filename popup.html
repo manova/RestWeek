@@ -1,13 +1,11 @@
 <!doctype html>
 <html>
 
-
-
 <head>
-	<title>HoverReader</title>
+	<title>RestaurantWick</title>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<link href="popup.css" rel="stylesheet" type="text/css">
-	
+
 	<script src='jquery.min.js'></script>
 	<script src='popup.js'></script>
 
@@ -16,7 +14,7 @@
 	#header{
 		float:left;
 		width:100%;
-		background:#3498db;
+		background:#F52D8C;
 		color:white;
 		padding:10px;
 		padding-top: 0px;
@@ -75,48 +73,29 @@
 
 
 <div id='header'>
-	<h1>HoverReader</h1>
-	<h2 style='font-weight:400'>Read an article simply by hovering over a link!</h2>
+	<h1>RestWeek</h1>
+	<h2 style='font-weight:400'>Easily browse the menus of restaurant week participants by hovering over their link!</h2>
 </div>
 
 <div id='page_wrapper'>
-	
-	<br>
-	<a target='_blank' href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fhoverreader%2Fbgchppjofckmmlfpegeinpegcjmejnlk'><img width='40px' src='http://www.htmlscraper.com/hoverread/facebooklogo.png'></a>
-	<a target='_blank' href='https://twitter.com/intent/tweet?url=https://chrome.google.com/webstore/detail/hoverreader/bgchppjofckmmlfpegeinpegcjmejnlk&text=Read%20an%20article%20simply%20by%20hovering%20over%20a%20link!'><img width='40px' src='http://www.htmlscraper.com/hoverread/twitter_logo.png'></a>
-	<a target='_blank' href='https://plus.google.com/share?url=https://chrome.google.com/webstore/detail/hoverreader/bgchppjofckmmlfpegeinpegcjmejnlk'><img width='40px' src='http://www.htmlscraper.com/hoverread/googlepluslogo.png'></a>
-	<br><br>
-	<!-- Options Table -->
-	<h2>HoverReader Options</h2>
-	<table id='options'>
-	</table>
-	<!-- End Options Table -->
-	(make sure you refresh the page after changing settings)
-	
-	<br>
-	
-	<h2 style='margin-bottom:5px;'>HoverReader Exclusions</h2>
-	<button class='searchButton' id='exclude_button'>Disable on this domain</button>
-	<table id='excludes_table' style='text-align:left;'>
-		<thead>
-			<th>Excluded Domain Names</th>
-		</thead>
-		<tbody></tbody>
-	</table>
-	(make sure you refresh the page disabling a domain)
 
 	<br><br>
 	<div align='center'>
-		<h2 style='text-align:center;'>If you like HoverReader, please donate!</h2>
-		<a style='margin-top:5px;' target='_blank' href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FPXCDTJLVU6EU'>
-			<image src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0">
-		</a>
+		<h2 style='text-align:center;'>Find RestaurantWick useful? Consider making a donation!</h2>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+			">
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
+
 		<br>
 
 		<div id='tips'>
-			<h2 style='text-align:center;'>Tips:</h2>
-			<p>Scroll up and down with the arrow keys or your mouse trackpad.</p>
-			<p>If HoverReader isn't going away, just click anywhere on the page.</p>
+			<h2 style='text-align:center;'>Note:</h2>
+			<p>You can scroll in any direction by using the arrow keys or mouse wheel</p>
+			<p>If RestaurantWick isn't going away, just click anywhere on the page.</p>
 		</div>
 
 	</div>
